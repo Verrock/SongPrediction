@@ -1,0 +1,25 @@
+services:
+
+  front-end:
+    image: front
+    restart: on-failure
+    build:
+      context: ./front/
+    ports:
+      - "8080:80/tcp"
+    networks:
+      - frontend
+
+  back-end:
+    image: back
+    restart: on-failure
+    build:
+      context: ./back/
+    ports:
+      - "3000:3000/tcp"
+    networks:
+      - frontend
+
+networks:
+  frontend:
+
