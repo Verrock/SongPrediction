@@ -49,7 +49,7 @@ Moreover, we did not have enough computation power to do a deep learning approac
 
 So we decided instead to have a clustering approach, creating a "map" with a K-Means and fitting the users on this map with a K-Nearest Neighbours.
 
-In the dataset with 600 000 tracks, we have the following features : id, name, artists, id_artists, duration_ms, explicit, popularity, release_date, year, mode, key, danceability , energy, loudness, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time_signature.
+In the dataset with 170 000 tracks, we have the following features : id, name, artists, id_artists, duration_ms, explicit, popularity, release_date, year, mode, key, danceability , energy, loudness, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time_signature.
 
 The following features were discarded : 
 
@@ -97,7 +97,7 @@ We then standarized the values with StandardScaler() from scikit-learn.
 
 ## K-means
 
-Once the data was processed, we have created a "map" with 20 clusters with the 600 000 tracks using Kmeans with scikit-learn.
+Once the data was processed, we have created a "map" with 20 clusters with the 170 000 tracks using Kmeans with scikit-learn.
 
 We used the elbow method to determine that 20 clusters was the optimal number of clusters with thoses data and features.
 
