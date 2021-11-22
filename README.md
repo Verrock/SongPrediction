@@ -32,7 +32,7 @@ The models were made using python 3.7 and the user web interface was made in Jav
 ## Data
 
 We initially planned to use the [Spotify API](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-audio-features) to get a tracks, its artists, genre and features (instrumentalness, loundess, duration, vocals ...).
-However, it appeared that such dataset already exist with 600 000 tracks ([Kaggle challenge DataSet](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=tracks.csv)). Which is far enough for our power of computation with our little computer. So we used this dataset instead of reinventing the wheel.
+However, it appeared that such dataset already exist with 170 000 tracks ([Kaggle challenge DataSet](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=tracks.csv)). Which is far enough for our power of computation with our little computer. So we used this dataset instead of reinventing the wheel.
 
 This data can be found in [/back/src/model/data.csv](https://github.com/Verrock/SongPrediction/blob/master/back/src/model/data.csv) (Too much data for github to display).
 
